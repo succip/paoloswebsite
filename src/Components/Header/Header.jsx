@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-sm navbar-light">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           PAOLO DOT COM
         </a>
         <button
@@ -22,7 +22,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link navbarItem" href="#">
+              <a className="nav-link navbarItem" href="/projects">
                 Projects
               </a>
             </li>
@@ -32,7 +32,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/contact">
                 Contact
               </a>
             </li>
