@@ -10,7 +10,6 @@ const Projects = () => {
           <a href={project.link} target="_blank" rel="noreferrer">
             {project.title}
           </a>
-          <img src={`../../assets/images/${project.image}`} alt="gallery" />
           <p>{project.description}</p>
         </div>
       ))}
