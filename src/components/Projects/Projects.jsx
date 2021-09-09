@@ -1,18 +1,19 @@
 import React from "react";
+import projects from "../../assets/data/projects";
 
 const Projects = () => {
   return (
     <React.Fragment>
-      <h3>Collection of fun things I've done</h3>
-      <div>
-        <a href="https://mappolls.netlify.app/">MapPolls</a>
-      </div>
-      <div>
-        <a href="https://geojsoncreator.netlify.app/">GeoJSON Creator</a>
-      </div>
-      <div>
-        <a href="https://cosmos.surrey.ca/external/surreygame/">Surrey Community Guesser</a>
-      </div>
+      <h3>Collection of the fun things I've done</h3>
+      {projects.map((project, index) => (
+        <div key={index}>
+          <a href={project.link} target="_blank" rel="noreferrer">
+            {project.title}
+          </a>
+          <img src={`../../assets/images/${project.image}`} alt="gallery" />
+          <p>{project.description}</p>
+        </div>
+      ))}
     </React.Fragment>
   );
 };

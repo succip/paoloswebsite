@@ -27,7 +27,12 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                target="_blank"
+                rel="noreferrer"
+                href="https://drive.google.com/file/d/118jg-eSMw6ZOcvXIVRIfSpnW_WLi4k6O/view?usp=sharing"
+              >
                 Resume
               </a>
             </li>
