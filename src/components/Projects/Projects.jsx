@@ -3,17 +3,20 @@ import projects from "../../assets/data/projects";
 
 const Projects = () => {
   return (
-    <React.Fragment>
+    <div className="mx-auto text-center">
       <h3>Collection of the fun things I've done</h3>
       {projects.map((project, index) => (
         <div key={index}>
-          <a href={project.link} target="_blank" rel="noreferrer">
+          <a className="d-block h4" href={project.link} target="_blank" rel="noreferrer">
             {project.title}
+          </a>
+          <a href={project.link} target="_blank" rel="noreferrer">
+            <img className="col-sm-6 d-block mx-auto" src={project.image} alt="" />
           </a>
           <p>{project.description}</p>
         </div>
       ))}
-    </React.Fragment>
+    </div>
   );
 };
 
