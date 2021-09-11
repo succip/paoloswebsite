@@ -11,7 +11,7 @@ const Projects = () => {
             {project.title}
           </a>
           <a href={project.link} target="_blank" rel="noreferrer">
-            <img className="col-sm-6 mx-auto" src={project.image} alt="" />
+            <img className="col-sm-6 mx-auto border" src={project.image} alt="" />
           </a>
           <p>{project.description}</p>
         </div>
